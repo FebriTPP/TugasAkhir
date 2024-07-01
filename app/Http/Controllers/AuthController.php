@@ -11,19 +11,20 @@ class AuthController extends Controller
 {
     public function login(Request $request)
     {
-
         // Validate the request data
-        $request->validate([
+        $validated = $request->validate([
             'email' => 'required|string|email',
             'password' => 'required|string',
         ]);
 
         // Attempt to log in
-    $authAttempt = Auth::attempt(['email' => $request->email, 'password' => $request->password]);
+        $authAttempt = Auth::attempt($validated);
 
-    if ($authAttempt) {
-        return redirect()->route('/admin');
-    }
+        // dd($authAttempt);
+
+        if ($authAttempt) {
+            return redirect()->route('dashboard.admin');
+        }
 
         // Flash login error message
         session()->flash('loginError', 'Email or password is incorrect.');

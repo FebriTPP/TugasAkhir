@@ -9,9 +9,8 @@ Route::get('/', function () {
 
 Route::post('/login', [AuthController::class, "login"]);
 
-Route::get('/admin', function(){
+Route::get('/admin', function () {
     return view('auth.admin.dashboard');
-})->middleware('auth');
+})->middleware('auth')->name('dashboard.admin');
 
-Route::post('/logout', [AuthController::class,'logout']);
-
+Route::post('/logout', [AuthController::class, 'logout']);
