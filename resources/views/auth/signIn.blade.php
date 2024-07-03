@@ -5,7 +5,7 @@
         <div class="position-absolute top-50 start-50 translate-middle">
             <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 40rem; ">
                 <div class="card-body ">
-                    <h5 class="card-title text-center fs-2 text-danger" style="margin-bottom: 35px">Admin!n Aware</h5>
+                    <h5 class="card-title text-center fs-2 text-danger" style="margin-bottom: 35px">Admin !n Aware</h5>
 
                     <form method="POST" action="/login">
                         @csrf
