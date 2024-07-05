@@ -45,7 +45,7 @@
                     <div class="container mt-5">
                         <h4>History Aktifitas Simulasi:</h4>
                         <table class="table table-bordered">
-                            <thead>
+                            <thead class="table-light">
                                 <tr>
                                     <th>Bencana Alam</th>
                                     <th>Wilayah</th>

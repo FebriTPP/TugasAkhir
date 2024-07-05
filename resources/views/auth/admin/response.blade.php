@@ -37,7 +37,7 @@
                 </div>
         </form>
         <table class="table table-bordered">
-            <thead class="thead-light">
+            <thead class="table-light">
                 <tr>
                     <th>Tanggal Aktifitas</th>
                     <th>Wilayah</th>
