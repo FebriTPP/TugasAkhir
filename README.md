@@ -15,7 +15,6 @@ Same as Laravel 11 is.
 - `composer update`
 - `php artisan key:generate`
 - `php artisan migrate:fresh --seed`
-- `php artisan db:seed`
 - `php artisan serve`
 
 ## Usage
