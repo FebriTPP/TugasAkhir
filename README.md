@@ -1,6 +1,6 @@
 # About this project
 
-Idk. This project is my friend's.
+Tugas Akhir PPB dan PW
 
 ## Requirements
 
@@ -14,8 +14,7 @@ Same as Laravel 11 is.
 
 - `composer update`
 - `php artisan key:generate`
-- `php artisan migrate:fresh`
-- `php artisan db:seed`
+- `php artisan migrate:fresh --seed`
 - `php artisan serve`
 
 ## Usage
@@ -25,4 +24,4 @@ Login using creds below:
 |          |                    |
 | :------- | :----------------- |
 | Email    | <test@example.com> |
-| Password | password           |
+| Password | 12345678           |
