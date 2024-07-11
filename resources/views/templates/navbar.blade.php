@@ -16,7 +16,7 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <form action="/admin" method="GET">
+                        <form action="/dashboard" method="GET">
                             <button type="submit" class="btn btn-danger">Home</button>
                         </form>
                     </li>
