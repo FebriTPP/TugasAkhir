@@ -7,9 +7,7 @@
                 <div class="col-12 col-lg-12">
                     <h1 class="mt-5 pt-5 text-center">Sistem Simulasi Bencana</h1>
                     <div class="text-center mt-4">
-                        <iframe id="mapIframe" width="100%" height="375" frameborder="0" style="border:0;"
-                            src="https://www.google.com/maps/embed?center=-6.17511,106.82496&zoom=12" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div id="map" style="width: 100%; height: 375px;"></div>
                     </div>
                     <form action="/dashboard" method="POST">
                         @csrf
@@ -64,13 +62,10 @@
                                 @foreach ($reports as $report)
                                     <tr>
                                         <td>{{ $report->disaster->nama_bencana }}</td>
-                                        <td>{{ $report->created_at }}
+                                        <td>{{ $report->created_at }}</td>
                                         <td>{{ $report->city->nama_kota }}</td>
-                                        </td>
-                                        <td>{{ $report->city->latitude }}
-                                        </td>
-                                        <td>{{ $report->city->longitude }}
-                                        </td>
+                                        <td>{{ $report->city->latitude }}</td>
+                                        <td>{{ $report->city->longitude }}</td>
                                         <td><a href="{{ $report->city->lokasi }}" target="_blank">Lihat Lokasi</a></td>
                                     </tr>
                                 @endforeach
